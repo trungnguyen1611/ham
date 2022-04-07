@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>...</title>
+</head>
+<body>
+<script>
+    function check(num) {
+        // let temp = true;
+        if (num < 2) {
+            // temp = false;
+            return false;
+        }
+        for (i = 2; i < num; i++) {
+            if (num % i == 0) {
+                // temp = false;
+                return false;
+                break;
+            }
+        }
+        if (true) {
+            console.log(`${num} la so nguyen to`);
+        }
+    }
+    let count=0;
+    let num=0;
+while(count<10000){
+        result=check(num);
+        num++;
+        count++;
+}
+</script>
+</body>
+</html>

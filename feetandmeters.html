@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>...</title>
+</head>
+<body>
+<input type="text" id="feet" placeholder="nhập feet">
+<input type="button" value="CHANGE" id="change1"><br>
+<input type="text" id="meter" placeholder="nhập meter">
+<input type="button" value="CHANGE" id="change2">
+<script>
+    let x = document.getElementById("change1");
+    x.onclick = feetToMeter;
+    let y = document.getElementById("change2");
+    y.onclick = meterToFeet;
+
+    function feetToMeter() {
+        let meter;
+        let feet;
+        feet = document.getElementById("feet").value;
+        meter = 0.305 * feet;
+        document.getElementById("feet").value = meter;
+    }
+
+    function meterToFeet() {
+        let feet;
+        let meter;
+        meter = document.getElementById("meter").value;
+        feet = 3.279 * meter;
+        document.getElementById("meter").value = feet;
+    }
+</script>
+</body>
+</html>
